@@ -19,6 +19,8 @@ import (
 func getTables() []*schema.Table {
 	tables := []*schema.Table{
 		actions.Workflows(),
+		actions.WorkflowRuns(),
+		actions.WorkflowJobRuns(),
 		billing.Action(),
 		billing.Storage(),
 		billing.Package(),
